@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>In a Moment We Unite</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on In a Moment We Unite</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>test</title>
+      <link>http://localhost:1313/posts/26-s1/test/</link>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/26-s1/test/</guid>
+      <description>qwertttttest</description>
+    </item>
+    <item>
+      <title>tobi lou为newjeans制作的remix遭Hybe下架</title>
+      <link>http://localhost:1313/posts/black/tobilou/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/black/tobilou/</guid>
+      <description>tobi lou透露“现在hybe对我有点不爽”</description>
+    </item>
+    <item>
+      <title>Danielle在Phoning里的日历被删除</title>
+      <link>http://localhost:1313/posts/black/daniphoning/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/black/daniphoning/</guid>
+      <description>Danille账号被移除、相关话题遭禁用</description>
+    </item>
+    <item>
+      <title>Newjeans推动练习生人权法案</title>
+      <link>http://localhost:1313/posts/purple/lianxisheng/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/purple/lianxisheng/</guid>
+      <description>新的“练习生标准合约”出炉 明确损害赔偿金支付期限</description>
+    </item>
+    <item>
+      <title>Hybe员工因田柾国声援Newjeans对其发表不当言论</title>
+      <link>http://localhost:1313/posts/black/jkk-bully/</link>
+      <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/black/jkk-bully/</guid>
+      <description>Hybe员工在公司内部blind发表对田柾国的不当言论</description>
+    </item>
+    <item>
+      <title>titletitletitletitletitle</title>
+      <link>http://localhost:1313/analysis/test/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analysis/test/</guid>
+      <description>qwertyuiop</description>
+    </item>
+    <item>
+      <title>无视事件全过程存档</title>
+      <link>http://localhost:1313/analysis/hanni/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analysis/hanni/</guid>
+      <description>点击查看系统性梳理。</description>
+    </item>
+    <item>
+      <title>Newjeans促进编舞版权立法</title>
+      <link>http://localhost:1313/posts/purple/dance-lifa/</link>
+      <pubDate>Sat, 18 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/purple/dance-lifa/</guid>
+      <description>[独家] 政府制定“编舞版权指南”&amp;hellip;&amp;hellip;“新牛仔事件”，准备年底前的指导方针</description>
+    </item>
+    <item>
+      <title>投稿/关于</title>
+      <link>http://localhost:1313/contribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contribute/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

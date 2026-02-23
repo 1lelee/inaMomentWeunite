@@ -1,0 +1,41 @@
+
+/*cusor*/
+/* 隐藏默认光标 */
+* {
+  cursor: none !important;
+}
+
+/* 自定义光标容器 */
+.custom-cursor {
+  position: fixed;
+  width: 60px;          /* 根据你的图片尺寸调整 */
+  height: 60px;
+  background-image: url('/images/cursor.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;  /* 让点击穿透 */
+  z-index: 9999;
+  transform: translate(-50%, -50%); /* 使光标中心对准鼠标坐标 */
+  transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+  will-change: left, top, transform;
+  filter: brightness(1.0);
+}
+
+/* 移动特效（可选：鼠标移入链接时改变图片或大小） */
+.custom-cursor.hover {
+  background-image: url('/images/cursor.png'); /* 悬停时的图片 */
+  width: 50px;
+  height: 50px;
+}
+
+/* 点击特效 */
+.custom-cursor.click {
+  transform: translate(-50%, -50%) scale(0.8); /* 点击缩小 */
+  filter: brightness(0.8);/* 变亮 */
+}
+
+/* 隐藏光标（当鼠标离开窗口时） */
+.custom-cursor.hidden {
+  opacity: 0;
+}

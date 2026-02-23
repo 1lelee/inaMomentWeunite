@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>关于某复杂事件的深度复盘 on In a Moment We Unite</title>
+    <link>http://localhost:1313/analysis/</link>
+    <description>Recent content in 关于某复杂事件的深度复盘 on In a Moment We Unite</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>titletitletitletitletitle</title>
+      <link>http://localhost:1313/analysis/test/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analysis/test/</guid>
+      <description>qwertyuiop</description>
+    </item>
+    <item>
+      <title>无视事件全过程存档</title>
+      <link>http://localhost:1313/analysis/hanni/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analysis/hanni/</guid>
+      <description>点击查看系统性梳理。</description>
+    </item>
+  </channel>
+</rss>

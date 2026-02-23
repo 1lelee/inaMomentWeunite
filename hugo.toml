@@ -1,0 +1,3 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'zh-cn'
+title = 'In a Moment We Unite'

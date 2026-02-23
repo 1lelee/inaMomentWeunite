@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blue on In a Moment We Unite</title>
+    <link>http://localhost:1313/categories/blue/</link>
+    <description>Recent content in Blue on In a Moment We Unite</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/blue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>test</title>
+      <link>http://localhost:1313/posts/26-s1/test/</link>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/26-s1/test/</guid>
+      <description>qwertttttest</description>
+    </item>
+    <item>
+      <title>titletitletitletitletitle</title>
+      <link>http://localhost:1313/analysis/test/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analysis/test/</guid>
+      <description>qwertyuiop</description>
+    </item>
+    <item>
+      <title>关于某复杂事件的深度复盘</title>
+      <link>http://localhost:1313/analysis/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analysis/</guid>
+      <description>这件事跨度三个月，涉及法律、公关等多方博弈，点击查看系统性梳理。</description>
+    </item>
+    <item>
+      <title>无视事件全过程存档</title>
+      <link>http://localhost:1313/analysis/hanni/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analysis/hanni/</guid>
+      <description>点击查看系统性梳理。</description>
+    </item>
+  </channel>
+</rss>
