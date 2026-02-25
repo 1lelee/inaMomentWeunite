@@ -20,7 +20,7 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/26-s1/test/</loc>
+    <loc>http://localhost:1313/posts/26-s1/test/test/</loc>
     <lastmod>2026-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/black/</loc>
@@ -32,13 +32,13 @@
     <loc>http://localhost:1313/tags/tobi-lou/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/black/tobilou/</loc>
+    <loc>http://localhost:1313/posts/26-s1/tobilou/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/danielle/</loc>
     <lastmod>2026-02-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/black/daniphoning/</loc>
+    <loc>http://localhost:1313/posts/26-s1/daniphoing/daniphoning/</loc>
     <lastmod>2026-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/phoing/</loc>

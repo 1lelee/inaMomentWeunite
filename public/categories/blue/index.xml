@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/categories/blue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>test</title>
-      <link>http://localhost:1313/posts/26-s1/test/</link>
+      <link>http://localhost:1313/posts/26-s1/test/test/</link>
       <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/26-s1/test/</guid>
+      <guid>http://localhost:1313/posts/26-s1/test/test/</guid>
       <description>qwertttttest</description>
     </item>
     <item>
@@ -28,13 +28,6 @@
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/analysis/</guid>
       <description>这件事跨度三个月，涉及法律、公关等多方博弈，点击查看系统性梳理。</description>
-    </item>
-    <item>
-      <title>无视事件全过程存档</title>
-      <link>http://localhost:1313/analysis/hanni/</link>
-      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/analysis/hanni/</guid>
-      <description>点击查看系统性梳理。</description>
     </item>
   </channel>
 </rss>
