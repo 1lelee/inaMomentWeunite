@@ -65,7 +65,7 @@ categories: ["事件專題"]
 
 ---
 
-<!-- <h2 id="section-2">⏳ 時間線：誰在拖延真相？</h2>
+<h2 id="section-2">⏳ 時間線：誰在拖延真相？</h2>
 
 <div style="position: relative; padding-left: 30px; border-left: 2px solid #ddd; margin-left: 10px;">
 
@@ -308,4 +308,4 @@ Hanni 向到达的 ILLIT 成员及其经纪人打招呼。Hanni 表示 ILLIT 成
 
 ---
 
-**[下一篇預告]**：*6 月至 8 月的拉鋸戰——是誰下令刪除了監控？父母的控訴與 HYBE 的拖延戰術。* -->
+**[下一篇預告]**：*6 月至 8 月的拉鋸戰——是誰下令刪除了監控？父母的控訴與 HYBE 的拖延戰術。*
