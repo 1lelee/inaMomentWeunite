@@ -24,15 +24,15 @@ categories: ["事件專題"]
 
 ## 📋 阅读导览
 {{< timexian date="2024.05.27" >}}
-<a href="#section-2" style="text-decoration: none; color: #333; font-weight: bold; border-bottom: 1px dashed #ccc;">2024年5月27日——事件发生当日</a>
+<a href="#section-1" style="text-decoration: none; color: #333; font-weight: bold; border-bottom: 1px dashed #ccc;">2024年5月27日——事件发生当日</a>
 {{< /timexian >}}
-{{< timexian date="2024.05.27" >}}
+{{< timexian date="2024.06.01" >}}
 <a href="#section-2" style="text-decoration: none; color: #333; font-weight: bold; border-bottom: 1px dashed #ccc;">2024年6月1日——Hanni向闵熙珍报告此事</a>
 {{< /timexian >}}
 
+---
 
-
-<h2 id="section-1">📅 2024-05-27：事件发生当日</h2>
+<h3 id="section-1">📅 2024-05-27：事件发生当日</h2>
 
 <p>在完成造型后，Hanni 在 HYBE 大楼四层（共享妆造区附近的走廊）等待，多位艺人共用该区域。</br>在此期间，她<strong>两次</strong>遇到了三位ILLIT成员及其经纪人——第一次是ta们从电梯到达该楼层时，第二次是 5-10 分钟后ta们离开时。</p>
 
@@ -63,35 +63,17 @@ categories: ["事件專題"]
     </div>
 </div>
 
----
 
-<h2 id="section-2">⏳ 時間線：誰在拖延真相？</h2>
-
+<h3 id="section-2">📅 2024-06-01：Hanni向闵熙珍报告此事</h2>
 <div style="position: relative; padding-left: 30px; border-left: 2px solid #ddd; margin-left: 10px;">
 
-<div style="margin-bottom: 30px;">
-    <span style="font-weight: bold; background: #222; color: #fff; padding: 3px 10px; border-radius: 15px;">06.01</span>
-    <p style="margin-top: 10px;"><strong>私下報告</strong>：Hanni 向閔熙珍舉報此事（此聊天記錄後被 ADOR 擅自公開）。</p>
+Hanni 通过 KakaoTalk 私下向当时的 ADOR CEO 闵熙珍报告了该事件。这些私人聊天记录后来在 2024 年 3 月 7 日被 ADOR 在未经同意的情况下公开。
 </div>
 
-<div style="margin-bottom: 30px;">
-    <span style="font-weight: bold; background: #222; color: #fff; padding: 3px 10px; border-radius: 15px;">06.13</span>
-    <p style="margin-top: 10px;"><strong>正式舉報</strong>：父母正式要求 HYBE 調研監控。<strong>(此時距離監控自動覆蓋還有 9 個工作日)</strong>。</p>
+<h3 id="section-3">📅 2024-06-13：正式向 ADOR 和 HYBE 人事部门举报</h2>
+<div style="position: relative; padding-left: 30px; border-left: 2px solid #ddd; margin-left: 10px;">
+NewJeans 的家长正式向 ADOR 管理层及随后的 HYBE HR 报告了该事件，并要求展开调查。
 </div>
-
-<div style="margin-bottom: 30px;">
-    <span style="font-weight: bold; background: #222; color: #fff; padding: 3px 10px; border-radius: 15px;">06.19</span>
-    <p style="margin-top: 10px;"><strong>首輪會議</strong>：HYBE 宣稱「錄像無異常」，但<strong>拒絕</strong>向受害者家屬展示畫面。</p>
-</div>
-
-<div style="margin-bottom: 30px;">
-    <span style="font-weight: bold; background: #f44336; color: #fff; padding: 3px 10px; border-radius: 15px;">06.25</span>
-    <p style="margin-top: 10px;"><strong>關鍵證據失效</strong>：HYBE 稱監控已因 30 天保存期滿而「自動刪除」。</p>
-</div>
-
-</div>
-
----
 
 <h2 id="section-3">🕵️ 監控羅生門：保安的謊言</h2>
 
