@@ -1,0 +1,11 @@
+#不需要提交的文件列表
+# 1. 构建输出目录
+/public/
+
+# 2. Hugo 生成的资源目录
+/resources/_gen/
+
+# 3. Hugo 生成的项目文件
+/assets/jsconfig.json
+hugo_stats.json
+/.hugo_build.lock
