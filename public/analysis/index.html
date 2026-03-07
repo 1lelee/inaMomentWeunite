@@ -64,6 +64,32 @@
     </div>
     
     </section>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+    function expandAnchor() {
+        const hash = window.location.hash;
+        if (hash) {
+            
+            const target = document.querySelector(hash);
+            if (target) {
+                
+                const details = target.closest('details');
+                if (details) {
+                    details.open = true; 
+                    
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        }
+    }
+
+    
+    expandAnchor();
+
+    
+    window.addEventListener('hashchange', expandAnchor);
+});</script>
     </body>
     </html>
     

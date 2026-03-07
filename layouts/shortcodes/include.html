@@ -1,0 +1,6 @@
+{{- $path := .Get 0 -}}
+{{- with .Page.GetPage $path -}}
+  {{- .RenderShortcodes -}}
+{{- else -}}
+  {{- warnf "The %q shortcode could not find page %q. See %s" $.Name $path $.Position -}}
+{{- end -}}
