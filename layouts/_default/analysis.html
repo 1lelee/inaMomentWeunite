@@ -54,6 +54,32 @@
     </div>
     
     </section>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+    function expandAnchor() {
+        const hash = window.location.hash;
+        if (hash) {
+            // 查找带有对应 ID 的元素
+            const target = document.querySelector(hash);
+            if (target) {
+                // 查找该元素最近的父级 <details> 标签
+                const details = target.closest('details');
+                if (details) {
+                    details.open = true; // 自动展开
+                    // 稍微延迟滚动，确保页面渲染完成
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        }
+    }
+
+    // 页面加载时执行一次
+    expandAnchor();
+
+    // 监听 URL hash 变化（点击页面内锚点链接时）
+    window.addEventListener('hashchange', expandAnchor);
+});</script>
     </body>
     </html>
     
