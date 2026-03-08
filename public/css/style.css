@@ -15,7 +15,8 @@ body {
     background-attachment: fixed;
     
     /* 核心属性：确保背景填满屏幕 */
-    background-size: cover;
+    background-size: 2500px auto !important; 
+        background-repeat: repeat !important;
     background-position: center;
     background-repeat: no-repeat;
 }
