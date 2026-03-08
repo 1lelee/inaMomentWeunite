@@ -7,6 +7,54 @@
 </head>
 <body>
     <main>
+<style>
+#back-to-guide {
+    position: fixed;      
+    bottom: 100px; 
+    right: 30px;
+    z-index: 9999;        
+    
+     
+    opacity: 0;
+    pointer-events: none; 
+    transform: translateY(20px);  
+    
+    display: flex;        
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 50px;
+    height: 50px;
+    border: 1px solid #0014FC;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(5px);
+}
+
+ 
+#back-to-guide.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);  
+}
+
+#back-to-guide:hover {
+    background-color: #0014FC;
+    color: white !important;
+}
+
+#back-to-guide:hover .text {
+    color: white !important;
+}
+
+#back-to-guide .icon { font-size: 16px; }
+#back-to-guide .text { font-size: 10px; font-weight: bold; margin-top: 2px; color: #0014FC; }
+</style>
+
 <article class="post">
     <header class="post-header">
         <h1 class="post-title">tobi lou为newjeans制作的remix遭Hybe下架</h1>
@@ -64,7 +112,10 @@
 
     
  
-
+<button id="back-to-guide" title="回到阅读导览">
+    <span class="icon">📋</span>
+    <span class="text">导览</span>
+</button>
 <div class="prev-next-posts">
 
     
@@ -87,6 +138,48 @@
     
 </div>
 </article>
+
+<script>
+    (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            const guideBtn = document.getElementById('back-to-guide');
+            
+            const guideSection = document.getElementById('reading-guide');
+
+            
+            if (!guideSection || !guideBtn) {
+                console.log("未发现阅读导览锚点(#reading-guide)，悬浮按钮已禁用。");
+                return;
+            }
+
+            window.addEventListener('scroll', function() {
+                const guideBottom = guideSection.offsetTop + guideSection.offsetHeight;
+                
+                
+                const scrollDistance = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollDistance > guideBottom + 200) {
+                    guideBtn.style.display = "flex";
+                    
+                    setTimeout(() => guideBtn.classList.add('show'), 10);
+                } else {
+                    guideBtn.classList.remove('show');
+                    
+                    setTimeout(() => {
+                        if(!guideBtn.classList.contains('show')) guideBtn.style.display = "none";
+                    }, 300);
+                }
+            });
+
+            guideBtn.addEventListener('click', function() {
+                guideSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    })();
+</script>
 
     </main>
     <div class="custom-cursor" id="customCursor"></div>

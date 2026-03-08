@@ -22,5 +22,26 @@
       <guid>http://192.168.124.14:1313/analysis/hanni/</guid>
       <description>点击查看系统性梳理。</description>
     </item>
+    <item>
+      <title></title>
+      <link>http://192.168.124.14:1313/analysis/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://192.168.124.14:1313/analysis/1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://192.168.124.14:1313/analysis/jeju/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://192.168.124.14:1313/analysis/jeju/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://192.168.124.14:1313/analysis/yishen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://192.168.124.14:1313/analysis/yishen/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
