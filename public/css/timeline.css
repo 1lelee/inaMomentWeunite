@@ -461,7 +461,10 @@ header p {
 
     .summary {
         font-size: 0.88rem;
-        -webkit-line-clamp: 4; /* 手机端可以适当多展示一行 */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-clamp: 4; /* 手机端可以适当多展示一行 */
     }
 }
 
