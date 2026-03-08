@@ -60,7 +60,7 @@
             </div>
             <div class="timeline-content">
                 <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                <p class="summary">{{ .Params.summary | default .Summary }}</p>
+                <p class="summary">{{ .Params.summary | default .Summary| plainify | truncate 100 }}</p>
             </div>
         </div>
         {{ end }}

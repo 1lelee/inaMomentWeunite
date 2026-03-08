@@ -216,6 +216,11 @@ header p {
         0 2px 4px 0 rgba(0, 0, 0, 0.02),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
     transition: all 0.25s ease;
+    max-width: 800px; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
 }
 
 /* 悬停时强化卡片层次 */
@@ -316,36 +321,156 @@ header p {
     background: #0014FC; /* 这里建议用你背景格子里的那个蓝色 */
     box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
 }
-/* 响应式：小屏幕时取消线条，堆叠布局 */
-@media (max-width: 600px) {
+/* ================= 移动端自适应优化 ================= */
+
+@media (max-width: 768px) {
+    /* 1. 顶部 Header 调整 */
+    header {
+        padding: 20px 15px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 2. 导航栏自适应：允许换行或微调字体 */
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+    .nav-item {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    /* 3. 分类筛选器：改为横向滚动，防止占用过多纵向空间 */
+ /* 筛选区域整体瘦身 */
+.filters {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 15px 15px; /* 增加底部 padding 防止阴影被切断 */
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 按钮变身胶囊标签 (Chips) */
+.filter-btn {
+    white-space: nowrap;
+    padding: 5px 12px;      /* 显著缩小内边距 */
+    font-size: 0.75rem;     /* 减小字号 */
+    border-radius: 20px;    /* 极圆角 */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* 极细边框 */
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    color: #666;
+    transition: all 0.2s ease;
+    flex: 0 0 auto;
+}
+
+/* 激活状态保留主题色，但不加重阴影 */
+.filter-btn.active {
+    background: #0014FC; /* 沿用你背景中的蓝色 */
+    color: #fff;
+    border-color: #0014FC;
+    box-shadow: 0 4px 10px rgba(0, 20, 252, 0.2);
+}
+
+/* 隐藏滚动条但保留功能 (移动端优化) */
+.filters::-webkit-scrollbar {
+    height: 0px; 
+}
+
+    /* 4. 时间轴核心布局调整 */
+/* 1. 确保父容器是定位基准 */
+    .timeline {
+        position: relative;
+        padding: 15px 15px 15px 25px; /* 增加左侧间距，给线条留位置 */
+    }
+
+    /* 2. 重新定位垂直线条 */
     .timeline::before {
-        display: none;
+        /* 计算公式：timeline左内边距(25px) + marker左内边距(5px) + 圆点半径(6px) - 线条一半宽度(1px) */
+        left: 35px;           /* 根据下方 dot 的位置微调，如果是 2px 宽的线，设为 35px 左右 */
+        width: 3px;           /* 移动端建议细线，更具现代感 */
+        background-color: #e5e7eb; 
+        z-index: 1;           /* 确保在背景之上 */
     }
 
     .timeline-item {
-        flex-direction: column;
-        margin-bottom: 25px;
+        flex-direction: column; /* 关键：由左右并排变为上下堆叠 */
+        align-items: flex-start;
+        margin-bottom: 30px;
     }
 
-    .timeline-marker {
-        width: auto;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        margin-bottom: 8px;
-    }
+    /* 5. 时间标记调整 */
+/* 移动端 marker 容器优化 */
+.timeline-marker {
+    display: flex;
+    align-items: center;    /* 垂直居中 */
+    margin-bottom: 8px;     /* 缩小与下方卡片的间距 */
+    position: relative;
+    padding-left: 5px;      /* 给左侧留点呼吸空间 */
+}
 
-    .dot {
-        margin-bottom: 0;
-        margin-right: 8px;
-    }
+/* 强制 Dot 变成正圆并对齐 */
+.timeline-marker .dot {
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;     /* 与日期拉开点距离 */
+    flex-shrink: 0;         /* 防止被挤压变形 */
+    border-radius: 50%;
+    /* 如果有偏移，可以用 transform 微调 */
+    transform: translateY(-1px); 
+}
+.timeline-item .dot {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    animation: pulse 2s infinite ease-in-out;
+}
+.timeline-item[data-category="blue"] .dot { box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4); }
+.timeline-item[data-category="black"] .dot { box-shadow: 0 0 0 4px rgba(58, 58, 58, 0.4); }
+.timeline-item[data-category="orange"] .dot { box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.4); }
+.timeline-item[data-category="yellow"] .dot { box-shadow: 0 0 0 4px rgba(234, 179, 8, 0.4); }
+.timeline-item[data-category="purple"] .dot { box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.4); }
+.timeline-item[data-category="gray"] .dot { box-shadow: 0 0 0 4px rgba(107, 114, 128, 0.4); }
+.timeline-item[data-category="green"] .dot { box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.4); }
+.timeline-item[data-category="cyan"] .dot { box-shadow: 0 0 0 4px rgba(122, 203, 218, 0.4); }
 
-    .date {
-        display: inline;
-    }
+.timeline-marker .date {
+    font-family: monospace; /* 时间用等宽字体通常更好看 */
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: #888;
+}
 
+    /* 6. 卡片内容区调整 */
     .timeline-content {
-        margin-left: 0;           /* 移除左边距，卡片紧贴左侧 */
-        width: 100%;
+        width: 100%;      /* 占满全屏 */
+        margin-left: 0;   /* 取消左侧边距 */
+        padding: 18px 20px; /* 适当减小内边距 */
+        box-sizing: border-box; /* 确保 padding 不撑破宽度 */
+        min-width: 0;     /* 配合之前的 word-break 解决长文本问题 */
+    }
+
+    .timeline-content h2 {
+        font-size: 1.1rem;
+    }
+
+    .summary {
+        font-size: 0.88rem;
+        -webkit-line-clamp: 4; /* 手机端可以适当多展示一行 */
+    }
+}
+
+/* 针对极小屏幕 (iPhone SE等) 的微调 */
+@media (max-width: 375px) {
+    .timeline-content {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.5rem;
     }
 }
