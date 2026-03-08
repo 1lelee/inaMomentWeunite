@@ -334,16 +334,23 @@ header p {
     }
 
     /* 2. 导航栏自适应：允许换行或微调字体 */
-    .main-nav {
+.main-nav {
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); /* 强制平分为三列 */
+        gap: 5px;                              /* 缩小按钮间距 */
+        padding: 10px 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-item {
+        font-size: 0.8rem;   /* 稍微减小字号 */
+        padding: 8px 2px;    /* 减小左右内边距，防止文字溢出 */
+        text-align: center;
+        white-space: nowrap; /* 强制文字不换行 */
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 10px;
-    }
-    .nav-item {
-        font-size: 0.9rem;
-        padding: 6px 12px;
+        align-items: center;
     }
 
     /* 3. 分类筛选器：改为横向滚动，防止占用过多纵向空间 */
@@ -453,10 +460,16 @@ header p {
         padding: 18px 20px; /* 适当减小内边距 */
         box-sizing: border-box; /* 确保 padding 不撑破宽度 */
         min-width: 0;     /* 配合之前的 word-break 解决长文本问题 */
+        
     }
 
     .timeline-content h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     .summary {
@@ -466,6 +479,7 @@ header p {
         -webkit-line-clamp: 4;
         line-clamp: 4; /* 手机端可以适当多展示一行 */
     }
+    
 }
 
 /* 针对极小屏幕 (iPhone SE等) 的微调 */
