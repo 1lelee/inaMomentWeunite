@@ -19,3 +19,6 @@ related_posts:               # 手动指定的相关文章列表
 ### 这是一个测试
 ## This is a test page
 ### 이것은 테스트입니다. 
+
+<!-- 要导入的md文件 (相对路径, 忽略.md后缀) -->
+{{% include "/articles/test" %}} 
