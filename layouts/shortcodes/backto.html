@@ -1,0 +1,55 @@
+<div class="back-to-guide-wrapper">
+    <a href="#reading-guide" class="back-to-guide-link">
+        <span class="arrow">↑</span>
+        <span class="text">BACK TO MENU</span>
+    </a>
+</div>
+
+<style>
+.back-to-guide-wrapper {
+    text-align: right;
+    /* 缩小上下边距：上方 2rem(约32px)，下方 1rem(约16px) */
+    margin: 0.5rem 0 0.5rem; 
+    /* 添加一条极淡的顶部分割线，增加精致感 */
+    border-top: 1px solid #f0f0f0; 
+}
+
+.back-to-guide-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem; /* 字体稍微调小，更像注脚 */
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-to-guide-link:hover {
+    color: #0014FC;
+}
+
+.back-to-guide-link .arrow {
+    font-size: 0.9rem;
+    /* 调整箭头基准线，使其与文字视觉对齐 */
+    transform: translateY(-1px); 
+}
+
+.back-to-guide-link:hover .arrow {
+    transform: translateY(-4px);
+}
+
+/* 移动端适配：进一步压缩空间 */
+@media (max-width: 768px) {
+    .back-to-guide-wrapper {
+        margin: 1.5rem 0 0.5rem;
+        padding-top: 0.8rem;
+    }
+    .back-to-guide-link {
+        font-size: 0.75rem; /* 手机端稍微大一点点方便点击 */
+        padding: 5px 0;
+    }
+}
+</style>

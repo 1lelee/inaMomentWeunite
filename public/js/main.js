@@ -35,4 +35,31 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // ---------- 回到顶部 ----------
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    // 监听滚动事件
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopBtn.classList.add('show');
+            backToTopBtn.style.display = "flex"; 
+        } else {
+            backToTopBtn.classList.remove('show');
+            // 延迟隐藏，等待透明度动画完成
+            setTimeout(() => {
+                if(!backToTopBtn.classList.contains('show')) {
+                    backToTopBtn.style.display = "none";
+                }
+            }, 300);
+        }
+    };
+
+    // 点击平滑滚动到顶部
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
