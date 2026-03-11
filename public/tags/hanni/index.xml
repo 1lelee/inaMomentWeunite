@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hanni on In a Moment We Unite</title>
-    <link>http://192.168.124.14:1313/tags/hanni/</link>
+    <link>http://localhost:1313/tags/hanni/</link>
     <description>Recent content in Hanni on In a Moment We Unite</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.124.14:1313/tags/hanni/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hanni/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hanni签证延期受到压力</title>
+      <link>http://localhost:1313/posts/njzrecord/2025/2025-02-12_01/</link>
+      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/njzrecord/2025/2025-02-12_01/</guid>
+      <description>通过njz_pr Instagram账户揭露，在Hanni签证延期过程中，ADOR施加了不当压力。</description>
+    </item>
     <item>
       <title>Hybe员工因田柾国声援Newjeans对其发表不当言论</title>
-      <link>http://192.168.124.14:1313/posts/black/jkk-bully/</link>
+      <link>http://localhost:1313/posts/black/jkk-bully/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/black/jkk-bully/</guid>
+      <guid>http://localhost:1313/posts/black/jkk-bully/</guid>
       <description>Hybe员工在公司内部blind发表对田柾国的不当言论</description>
     </item>
   </channel>

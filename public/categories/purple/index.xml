@@ -2,66 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Purple on In a Moment We Unite</title>
-    <link>http://192.168.124.14:1313/categories/purple/</link>
+    <link>http://localhost:1313/categories/purple/</link>
     <description>Recent content in Purple on In a Moment We Unite</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.124.14:1313/categories/purple/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/purple/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>社团法人韩国演艺经纪协会特别机构奖惩调整伦理委员会，要求闵熙珍就‘介入NewJeans合约解除嫌疑’进行解释</title>
+      <link>http://localhost:1313/posts/njzrecord/2026/2026-03-03_02/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/njzrecord/2026/2026-03-03_02/</guid>
+      <description>社团法人韩国演艺经纪协会的特别机构奖惩调整伦理委员会发表立场文称：‘NewJeans抢人嫌疑必须查明’。但据报道该一审判决的新闻及旁听后记，裁判部判断为“闵前代表等人计划解除NewJeans专属合约的观点难以成立”。</description>
+    </item>
+    <item>
+      <title>社团法人韩国音乐内容协会，就闵熙珍一审胜诉发表呼吁文</title>
+      <link>http://localhost:1313/posts/njzrecord/2026/2026-02-20_02/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/njzrecord/2026/2026-02-20_02/</guid>
+      <description>社团法人韩国音乐内容协会发表呼吁文称，此次一审判决导致‘K-POP产业根基动摇’。但据报道该一审判决的新闻及旁听后记，裁判部判断为“闵前代表等人计划解除NewJeans专属合约的观点难以成立”。</description>
+    </item>
+    <item>
+      <title>社团法人韩国演艺制作人协会，对闵熙珍一审胜诉表示遗憾</title>
+      <link>http://localhost:1313/posts/njzrecord/2026/2026-02-13_01/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/njzrecord/2026/2026-02-13_01/</guid>
+      <description>社团法人韩国演艺制作人协会发表官方立场，认为此次一审判决是给予了‘抢人免罪符’。但据报道该一审判决的新闻及旁听后记，裁判部判断为“闵前代表等人计划解除NewJeans专属合约的观点难以成立”。</description>
+    </item>
     <item>
       <title>金民锡总理，HYBE现场访问争议</title>
-      <link>http://192.168.124.14:1313/posts/njzrecord/2026/2026-01-21_01/</link>
+      <link>http://localhost:1313/posts/njzrecord/2026/2026-01-21_01/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/njzrecord/2026/2026-01-21_01/</guid>
+      <guid>http://localhost:1313/posts/njzrecord/2026/2026-01-21_01/</guid>
       <description>对于金民锡总理21日现场访问HYBE一事，有批评指出，在主要管理层因涉嫌违反资本市场法而接受调查的情况下，国家二号人物此举是‘给未解除司法风险的企业撑腰’。</description>
     </item>
     <item>
       <title>Newjeans推动练习生人权法案</title>
-      <link>http://192.168.124.14:1313/posts/purple/lianxisheng/</link>
+      <link>http://localhost:1313/posts/purple/lianxisheng/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/purple/lianxisheng/</guid>
+      <guid>http://localhost:1313/posts/purple/lianxisheng/</guid>
       <description>新的“练习生标准合约”出炉 明确损害赔偿金支付期限</description>
     </item>
     <item>
+      <title>社团法人韩国管理联合发表正式立场“欢迎原告胜诉判决”</title>
+      <link>http://localhost:1313/posts/njzrecord/2025/2025-10-30_03/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/njzrecord/2025/2025-10-30_03/</guid>
+      <description>社团法人韩国管理联合就NewJeans与ADOR的专属合同效力确认诉讼一审判决表明立场，称其为“妥当的结果”。</description>
+    </item>
+    <item>
+      <title>社团法人韩国音乐内容协会发表声明文</title>
+      <link>http://localhost:1313/posts/njzrecord/2024/2024-12-13_01/</link>
+      <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/njzrecord/2024/2024-12-13_01/</guid>
+      <description>社团法人韩国音乐内容协会以未经证实的“tampering”嫌疑为由，发表威胁性声明文，称要将NewJeans的音源及唱片销量排除在Circle&#xA;Chart统计之外，并从使用Circle Chart数据的音乐放送节目及国内主要音乐颁奖典礼中排除。</description>
+    </item>
+    <item>
+      <title>社团法人韩国管理联合发表立场文</title>
+      <link>http://localhost:1313/posts/njzrecord/2024/2024-12-03_01/</link>
+      <pubDate>Tue, 03 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/njzrecord/2024/2024-12-03_01/</guid>
+      <description>社团法人韩国管理联合发表立场文，吐露关于NewJeans这个组合及其引发的专属合同问题，以及大众对此的看法和业内从业者感受到的失落感，称“所属公司只能彻底以‘乙’的立场，希望专属合同得以维持和保存”。</description>
+    </item>
+    <item>
+      <title>公平委将内部交易比重高达33.9%的HYBE列为需要持续监控的企业</title>
+      <link>http://localhost:1313/posts/njzrecord/2024/2024-11-26_01/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/njzrecord/2024/2024-11-26_01/</guid>
+      <description>HYBE的内部交易比重高达33.9%，在7家企业中最高，被列为需要持续监控的企业。</description>
+    </item>
+    <item>
       <title>国政监查 : 文化体育观光委员会</title>
-      <link>http://192.168.124.14:1313/posts/njzrecord/2024/2024-10-24_01/</link>
+      <link>http://localhost:1313/posts/njzrecord/2024/2024-10-24_01/</link>
       <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/njzrecord/2024/2024-10-24_01/</guid>
+      <guid>http://localhost:1313/posts/njzrecord/2024/2024-10-24_01/</guid>
       <description>进行了文化体育观光委员会国政监查。该监查中指出了“HYBE外貌品评内部报告书”、“唱片注水”、“NewJeans剽窃”、“内部者搜索”等问题。</description>
     </item>
     <item>
       <title>国政监查 : 环境劳动委员会</title>
-      <link>http://192.168.124.14:1313/posts/njzrecord/2024/2024-10-15_01/</link>
+      <link>http://localhost:1313/posts/njzrecord/2024/2024-10-15_01/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/njzrecord/2024/2024-10-15_01/</guid>
+      <guid>http://localhost:1313/posts/njzrecord/2024/2024-10-15_01/</guid>
       <description>进行了环境劳动委员会国政监查。Hanni和金柱英ADOR代表出席，还提出了HYBE“隐瞒过劳死”的嫌疑。</description>
     </item>
     <item>
       <title>报道公平委调查绝地求生联动概率型道具相关新闻</title>
-      <link>http://192.168.124.14:1313/posts/njzrecord/2024/2024-06-30_01/</link>
+      <link>http://localhost:1313/posts/njzrecord/2024/2024-06-30_01/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/njzrecord/2024/2024-06-30_01/</guid>
+      <guid>http://localhost:1313/posts/njzrecord/2024/2024-06-30_01/</guid>
       <description>报道称公平交易委员会正在就NewJeans - 绝地求生联动概率型道具相关争议进行调查。</description>
     </item>
     <item>
       <title>Newjeans促进编舞版权立法</title>
-      <link>http://192.168.124.14:1313/posts/purple/dance-lifa/</link>
+      <link>http://localhost:1313/posts/purple/dance-lifa/</link>
       <pubDate>Sat, 18 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/purple/dance-lifa/</guid>
+      <guid>http://localhost:1313/posts/purple/dance-lifa/</guid>
       <description>[独家] 政府制定“编舞版权指南”&amp;hellip;&amp;hellip;“新牛仔事件”，准备年底前的指导方针</description>
     </item>
     <item>
       <title>国民权益委员会启动对OOO所属公司HYBE等的金英兰法(禁止请托法)举报的事实确认程序</title>
-      <link>http://192.168.124.14:1313/posts/njzrecord/2022/2022-04-15_01/</link>
+      <link>http://localhost:1313/posts/njzrecord/2022/2022-04-15_01/</link>
       <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/njzrecord/2022/2022-04-15_01/</guid>
+      <guid>http://localhost:1313/posts/njzrecord/2022/2022-04-15_01/</guid>
       <description>向权益委举报此事的举报人A某表示：“看到相关报道后认为涉嫌违反金英兰法，便向权益委举报了。举报要求调查HYBE以及100名记者。”</description>
     </item>
     <item>
       <title>国民权益委员会发表立场称《记者与高管原则上不得从职务相关人员处收受任何钱物等》</title>
-      <link>http://192.168.124.14:1313/posts/njzrecord/2022/2022-04-09_01/</link>
+      <link>http://localhost:1313/posts/njzrecord/2022/2022-04-09_01/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/njzrecord/2022/2022-04-09_01/</guid>
+      <guid>http://localhost:1313/posts/njzrecord/2022/2022-04-09_01/</guid>
       <description>国民权益委员会发表立场称“记者与高管原则上不得从职务相关人员处收受任何钱物等”。</description>
     </item>
   </channel>
