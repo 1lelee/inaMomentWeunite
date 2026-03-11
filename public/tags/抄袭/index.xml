@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>抄袭 on In a Moment We Unite</title>
-    <link>http://192.168.124.14:1313/tags/%E6%8A%84%E8%A2%AD/</link>
+    <link>http://localhost:1313/tags/%E6%8A%84%E8%A2%AD/</link>
     <description>Recent content in 抄袭 on In a Moment We Unite</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 18 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.124.14:1313/tags/%E6%8A%84%E8%A2%AD/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%8A%84%E8%A2%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Newjeans促进编舞版权立法</title>
-      <link>http://192.168.124.14:1313/posts/purple/dance-lifa/</link>
+      <link>http://localhost:1313/posts/purple/dance-lifa/</link>
       <pubDate>Sat, 18 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/purple/dance-lifa/</guid>
+      <guid>http://localhost:1313/posts/purple/dance-lifa/</guid>
       <description>[独家] 政府制定“编舞版权指南”&amp;hellip;&amp;hellip;“新牛仔事件”，准备年底前的指导方针</description>
     </item>
   </channel>

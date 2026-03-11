@@ -1,8 +1,42 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ---------- 分类筛选 ----------
+    // ---------- 筛选状态管理 ----------
+    let currentCategory = 'all';
+    let currentYear = 'all';
+    let currentSearchTerm = '';
+
     const filterButtons = document.querySelectorAll('.filter-btn');
     const timelineItems = document.querySelectorAll('.timeline-item');
 
+    // 统一的筛选函数
+    function applyFilters() {
+        timelineItems.forEach(item => {
+            const itemCategory = item.dataset.category;
+            const itemDate = item.querySelector('.date').textContent;
+            const itemYear = itemDate.split('-')[0];
+            const title = item.querySelector('h2').textContent.toLowerCase();
+            const summary = item.querySelector('.summary').textContent.toLowerCase();
+
+            // 检查分类条件
+            const categoryMatch = currentCategory === 'all' || itemCategory === currentCategory;
+            
+            // 检查年份条件
+            const yearMatch = currentYear === 'all' || itemYear === currentYear;
+            
+            // 检查搜索条件
+            const searchMatch = currentSearchTerm === '' || 
+                               title.includes(currentSearchTerm) || 
+                               summary.includes(currentSearchTerm);
+
+            // 只有同时满足所有条件才显示
+            if (categoryMatch && yearMatch && searchMatch) {
+                item.style.display = 'flex';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    // ---------- 分类筛选 ----------
     filterButtons.forEach(btn => {
         btn.addEventListener('click', function() {
             // 移除所有按钮的 active 类
@@ -10,17 +44,74 @@ document.addEventListener('DOMContentLoaded', function() {
             // 给当前按钮加上 active
             this.classList.add('active');
 
-            const category = this.dataset.category; // 'all' 或颜色名
-
-            timelineItems.forEach(item => {
-                if (category === 'all' || item.dataset.category === category) {
-                    item.style.display = 'flex'; // 显示
-                } else {
-                    item.style.display = 'none';  // 隐藏
-                }
-            });
+            currentCategory = this.dataset.category;
+            applyFilters();
         });
     });
+
+    // ---------- 搜索框功能 ----------
+    const allBtn = document.getElementById('all-btn');
+    const yearBtn = document.getElementById('year-btn');
+    const yearOptions = document.getElementById('year-options');
+    const yearBtns = document.querySelectorAll('.year-btn');
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+
+    // 年份按钮点击事件
+    yearBtn.addEventListener('click', function() {
+        // 切换年份选项的显示/隐藏
+        if (yearOptions.style.display === 'none' || yearOptions.style.display === '') {
+            yearOptions.style.display = 'flex';
+        } else {
+            yearOptions.style.display = 'none';
+        }
+    });
+
+    // 全部按钮点击事件
+    allBtn.addEventListener('click', function() {
+        // 激活全部按钮
+        allBtn.classList.add('active');
+        yearBtn.classList.remove('active');
+        // 隐藏年份选项
+        yearOptions.style.display = 'none';
+        // 重置年份状态
+        currentYear = 'all';
+        // 移除所有年份按钮的active状态
+        yearBtns.forEach(b => b.classList.remove('active'));
+        // 应用筛选
+        applyFilters();
+    });
+
+    // 年份选项点击事件
+    yearBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // 激活当前年份按钮
+            yearBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            currentYear = this.dataset.year;
+            applyFilters();
+        });
+    });
+
+    // 搜索功能
+    function performSearch() {
+        currentSearchTerm = searchInput.value.toLowerCase();
+        applyFilters();
+    }
+
+    // 搜索按钮点击事件
+    searchButton.addEventListener('click', performSearch);
+
+    // 搜索框回车事件
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            performSearch();
+        }
+    });
+
+    // 实时搜索（可选，如果需要实时搜索可以取消注释）
+    // searchInput.addEventListener('input', performSearch);
 
     // ---------- 展开/折叠 ----------
     document.querySelectorAll('.toggle-details').forEach(btn => {

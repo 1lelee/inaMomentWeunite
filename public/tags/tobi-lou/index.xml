@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tobi Lou on In a Moment We Unite</title>
-    <link>http://192.168.124.14:1313/tags/tobi-lou/</link>
+    <link>http://localhost:1313/tags/tobi-lou/</link>
     <description>Recent content in Tobi Lou on In a Moment We Unite</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.124.14:1313/tags/tobi-lou/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/tobi-lou/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tobi lou为newjeans制作的remix遭Hybe下架</title>
-      <link>http://192.168.124.14:1313/posts/26-s1/tobilou/</link>
+      <link>http://localhost:1313/posts/26-s1/tobilou/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.124.14:1313/posts/26-s1/tobilou/</guid>
+      <guid>http://localhost:1313/posts/26-s1/tobilou/</guid>
       <description>tobi lou透露“现在hybe对我有点不爽”</description>
     </item>
   </channel>
