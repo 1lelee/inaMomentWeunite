@@ -113,6 +113,48 @@ document.addEventListener('DOMContentLoaded', function() {
     // 实时搜索（可选，如果需要实时搜索可以取消注释）
     // searchInput.addEventListener('input', performSearch);
 
+    // ---------- 排序功能 ----------
+    const sortBtns = document.querySelectorAll('.sort-btn');
+    const timelineContainer = document.querySelector('.timeline');
+
+    sortBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // 移除所有排序按钮的active状态
+            sortBtns.forEach(b => b.classList.remove('active'));
+            // 给当前按钮加上active
+            this.classList.add('active');
+
+            const sortType = this.dataset.sort;
+            sortTimelineItems(sortType);
+        });
+    });
+
+    function sortTimelineItems(sortType) {
+        const items = Array.from(timelineItems);
+        
+        items.sort((a, b) => {
+            const dateA = a.querySelector('.date').textContent;
+            const dateB = b.querySelector('.date').textContent;
+            
+            // 将日期字符串转换为Date对象进行比较
+            const timeA = new Date(dateA).getTime();
+            const timeB = new Date(dateB).getTime();
+            
+            if (sortType === 'newest') {
+                // 最新动态：降序（新的在前）
+                return timeB - timeA;
+            } else {
+                // 早期事件：升序（旧的在前）
+                return timeA - timeB;
+            }
+        });
+
+        // 重新排列DOM元素
+        items.forEach(item => {
+            timelineContainer.appendChild(item);
+        });
+    }
+
     // ---------- 展开/折叠 ----------
     document.querySelectorAll('.toggle-details').forEach(btn => {
         btn.addEventListener('click', function() {
