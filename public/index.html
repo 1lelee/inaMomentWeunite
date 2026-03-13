@@ -36,19 +36,26 @@
                 <button class="year-btn" data-year="2022">2022</button>
                 <button class="year-btn" data-year="2021">2021</button>
             </div>
-            <div class="search-box">
-                <input type="text" id="search-input" placeholder="按标题或内容搜索......">
-                <button id="search-button">🔍</button>
+            <div class="search-sort-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="按标题或内容搜索......">
+                    <button id="search-button">🔍</button>
+                </div>
+                
+                <div class="sort-controls">
+                    <button class="sort-btn active" data-sort="newest">最新动态</button>
+                    <button class="sort-btn" data-sort="oldest">早期事件</button>
+                </div>
             </div>
         </div>
         
         
     </header>
     <nav class="main-nav">
-    <a href="/" class="nav-item active">🕒 时间线</a>
-    <a href="/analysis/" class="nav-item">📚 重点事件分析</a>
-    <a href="/contribute/" class="nav-item">✍️ 投稿/关于</a>
-</nav>
+        <a href="/" class="nav-item active">🕒 时间线</a>
+        <a href="/analysis/" class="nav-item">📚 重点事件分析</a>
+        <a href="/contribute/" class="nav-item">✍️ 投稿/关于</a>
+    </nav>
     
     <div class="custom-cursor" id="customCursor"></div>
     
@@ -63,7 +70,6 @@
         <button class="filter-btn" data-category="purple">💜 公权力相关</button>
         <button class="filter-btn" data-category="green">💚 时评与声援</button>
         <button class="filter-btn" data-category="orange">🧡 粉圈相关</button>
-
     </div>
 <button id="back-to-top" title="回到顶部">
     <span class="arrow">↑</span>
