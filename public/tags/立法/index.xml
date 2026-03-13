@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>立法 on In a Moment We Unite</title>
-    <link>http://localhost:1313/tags/%E7%AB%8B%E6%B3%95/</link>
+    <link>http://192.168.1.7:1313/tags/%E7%AB%8B%E6%B3%95/</link>
     <description>Recent content in 立法 on In a Moment We Unite</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E7%AB%8B%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://192.168.1.7:1313/tags/%E7%AB%8B%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Newjeans推动练习生人权法案</title>
-      <link>http://localhost:1313/posts/purple/lianxisheng/</link>
+      <link>http://192.168.1.7:1313/posts/purple/lianxisheng/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/purple/lianxisheng/</guid>
+      <guid>http://192.168.1.7:1313/posts/purple/lianxisheng/</guid>
       <description>新的“练习生标准合约”出炉 明确损害赔偿金支付期限</description>
     </item>
   </channel>
