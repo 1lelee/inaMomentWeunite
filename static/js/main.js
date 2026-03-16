@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const filterButtons = document.querySelectorAll('.filter-btn');
     const timelineItems = document.querySelectorAll('.timeline-item');
+    const searchInput = document.getElementById('search-input');
 
     // 统一的筛选函数
     function applyFilters() {
@@ -15,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemYear = itemDate.split('-')[0];
             const title = item.querySelector('h2').textContent.toLowerCase();
             const summary = item.querySelector('.summary').textContent.toLowerCase();
+            
+            // 从data-tags属性获取tags
+            const tagsAttr = item.dataset.tags || '';
+            const tags = tagsAttr.split('|').filter(tag => tag.trim() !== '').map(tag => tag.toLowerCase());
 
             // 检查分类条件
             const categoryMatch = currentCategory === 'all' || itemCategory === currentCategory;
@@ -22,10 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // 检查年份条件
             const yearMatch = currentYear === 'all' || itemYear === currentYear;
             
-            // 检查搜索条件
+            // 检查搜索条件（包括tag）
             const searchMatch = currentSearchTerm === '' || 
                                title.includes(currentSearchTerm) || 
-                               summary.includes(currentSearchTerm);
+                               summary.includes(currentSearchTerm) ||
+                               tags.some(tag => tag.includes(currentSearchTerm));
 
             // 只有同时满足所有条件才显示
             if (categoryMatch && yearMatch && searchMatch) {
@@ -35,6 +41,25 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // ---------- URL参数处理 ----------
+    function handleUrlParams() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tagParam = urlParams.get('tag');
+        
+        if (tagParam && searchInput) {
+            // 解码tag参数
+            const decodedTag = decodeURIComponent(tagParam);
+            // 设置搜索框的值
+            searchInput.value = decodedTag;
+            // 执行搜索
+            currentSearchTerm = decodedTag.toLowerCase();
+            applyFilters();
+        }
+    }
+
+    // 页面加载时处理URL参数
+    handleUrlParams();
 
     // ---------- 分类筛选 ----------
     filterButtons.forEach(btn => {
@@ -54,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const yearBtn = document.getElementById('year-btn');
     const yearOptions = document.getElementById('year-options');
     const yearBtns = document.querySelectorAll('.year-btn');
-    const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
 
     // 年份按钮点击事件

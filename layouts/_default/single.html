@@ -15,7 +15,7 @@
     <div class="post-tags">
         <strong>标签：</strong>
         {{ range . }}
-        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag">#{{ . }}</a>
+        <a href="/?tag={{ . | urlize }}" class="tag" data-tag="{{ . }}">#{{ . }}</a>
         {{ end }}
     </div>
     {{ end }}
@@ -80,4 +80,3 @@
 </div>
 </article>
 {{ end }}
-

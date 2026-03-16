@@ -260,6 +260,38 @@ header p {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.tag {
+    background: rgba(0, 20, 252, 0.1);
+    color: #0014FC;
+    border: 1px solid rgba(0, 20, 252, 0.3);
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.tag:hover {
+    background: rgba(0, 20, 252, 0.2);
+    border-color: rgba(0, 20, 252, 0.5);
+    transform: translateY(-1px);
+}
+
+.tag.active {
+    background: #0014FC;
+    color: white;
+    border-color: #0014FC;
+    box-shadow: 0 2px 8px rgba(0, 20, 252, 0.3);
+}
 .main-nav {
     display: flex;
     justify-content: center;
