@@ -12,9 +12,9 @@ evidences:
     url: "/images/24-s2/image.png"   # 图片放在 static/images/ 下
 related_posts:               # 手动指定的相关文章列表
   - title: "Newjeans推动练习生人权法案"                # 相关文章的标题（用于显示）
-    url: "/posts/purple/dance-lifa"                  # 相关文章的链接（相对路径，如 "/posts/hanni-congress/"）
+    link: "/posts/purple/dance-lifa"                  # 相关文章的链接（相对路径，如 "/posts/hanni-congress/"）
   - title: "Danielle在Phoning里的日历被删除"
-    url: "/posts/black/daniphoning"
+    link: "/posts/black/daniphoning"
 ---
 ### 这是一个测试
 ## This is a test page
