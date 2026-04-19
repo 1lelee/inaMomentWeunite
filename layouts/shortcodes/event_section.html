@@ -1,0 +1,4 @@
+<h3 id="{{ .Get "id" }}">📅 {{ .Get "date" }}：{{ .Get "title" }}</h3>
+<div style="position: relative; padding-left: 30px; border-left: 2px solid #ddd; margin-left: 10px;">
+    {{ .Inner | markdownify }}
+</div>

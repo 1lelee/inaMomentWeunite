@@ -1,0 +1,14 @@
+{{- $url := .Get "url" -}}
+{{- $text := .Get "text" | default $url -}}
+{{- $source := .Get "source" | default "Reference" -}} <div class="archive-link-box">
+    <a href="{{ $url | safeURL }}" target="_blank" rel="noopener" class="archive-card">
+        <div class="archive-side-tag">{{ $source }}</div>
+        <div class="archive-main">
+            <span class="archive-title">{{ $text }}</span>
+            <code class="archive-url">{{ strings.TrimPrefix "https://" (strings.TrimPrefix "http://" $url) | truncate 60 }}</code>
+        </div>
+        <div class="archive-status">
+            <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M15 3h6v6M10 14L21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+        </div>
+    </a>
+</div>
