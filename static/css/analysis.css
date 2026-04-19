@@ -70,7 +70,87 @@
     white-space: nowrap;
     margin-left: 20px;
 }
+.archive-link-box {
+    margin: 1rem 0;
+    font-family: "Inter", -apple-system, "SF Pro SC", "PingFang SC", sans-serif;
+}
 
+.archive-card {
+    display: flex;
+    align-items: stretch;
+    background: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    text-decoration: none !important;
+    color: #444 !important;
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+/* 左侧信源标签：像档案索引号 */
+.archive-side-tag {
+    background: #f0f0f0;
+    color: #666;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #e0e0e0;
+    white-space: nowrap;
+}
+
+.archive-main {
+    flex-grow: 1;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0; /* 修复溢出 */
+}
+
+.archive-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* URL 使用等宽字体，增加“技术档案”感 */
+.archive-url {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 11px;
+    color: #999;
+    background: none;
+    padding: 0;
+}
+
+.archive-status {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+}
+
+/* 悬停效果：无需大幅度跳动，只需颜色的微妙变化 */
+.archive-card:hover {
+    background: #f5f7ff;
+    border-color: #d0d7de;
+}
+
+.archive-card:hover .archive-side-tag {
+    background: #e1e4e8;
+    color: #444;
+}
+
+.archive-card:hover .archive-status {
+    color: #0366d6;
+}
 /* ================= 专题解析页面移动端自适应 ================= */
 
 @media (max-width: 768px) {

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     <link rel="stylesheet" href="/css/style.css">
+        {{ if eq .Section "analysis" }}
+    <link rel="stylesheet" href="/css/analysis.css">
+    {{ end }}
 </head>
 <body>
     <main>
