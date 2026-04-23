@@ -28,7 +28,7 @@
         <h1>{{ .Site.Title }}</h1>
         <p>百般搓染 牛仔也依然靛蓝</p>
         <!-- <p>Welcome to Home 722!</p> -->
-        <!-- <p>HERE COMES NEWJEANS.WE'RE NOT BLUE LIKE OTHER JEANS.KEEP AWAY FROM BLUE - KEEP NEWJEANS WITH YOU!</p> -->
+        <!-- <p></p> -->
     </header>
     <nav class="main-nav">
     <a href="/" class="nav-item">🕒 时间线</a>
@@ -47,17 +47,260 @@
             border: 1px solid rgba(0, 20, 252, 0.1);
             box-shadow: 0 20px 40px rgba(0,0,0,0.05);
         }
+        .site-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .site-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.2s;
+    }
+    .site-card:hover {
+        background: #f8f9fa;
+        border-color: #0984e3;
+    }
+    .site-name {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 4px;
+        color: #0984e3;
+    }
+    .site-desc {
+        margin: 0;
+        font-size: 0.85rem;
+        color: #636e72;
+    }
+    .site-arrow {
+        font-size: 1.2rem;
+        color: #b2bec3;
+    }
+    .site-card:hover .site-arrow {
+        color: #0984e3;
+        transform: translateX(5px);
+    }
+        .submission-content {
+            padding: 2rem;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        /* 1. 版头部分 */
+        .intro-header {
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 2rem;
+        }
+        .intro-header h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+        .thanks-badge {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #01579b;
+            padding: 5px 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* 2. 邮箱与须知部分 */
+        .submission-section {
+            margin-bottom: 2.5rem;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: "> ";
+            margin-right: 8px;
+            color: #636e72;
+        }
+        .email-card {
+             display: inline-block;
+    padding: 10px 16px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa, #eef1f5);
+    border: 1px solid #e3e6ea;
+    border-radius: 8px;
+    font-family: "SF Mono", Consolas, monospace;
+    transition: all 0.25s ease;
+        }
+        .email-card:hover {
+            background: #111;
+    color: #fff;
+    border-color: #111;
+    cursor: pointer;
+        }
+        .rules-list {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 1.2rem 1.2rem 1.2rem 2rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+        .rules-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* 3. 相关站点 */
+        .site-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .site-item {
+            text-decoration: none;
+            color: #0984e3;
+            border: 1px solid #0984e3;
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+        .site-item:hover {
+            background: #0984e3;
+            color: white;
+        }
+
+        /* 4. 贡献者名单 */
+        .contributor-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .contributor-tag {
+            background: #dfe6e9;
+            color: #636e72;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+        .copy-tip {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #fff;
+    background: #111;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+/* 显示状态 */
+.email-card.copied .copy-tip {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
     </style>
 
     <div class="contribute-card">
-        <h2>✍️ 投稿指南</h2>
-        <p>11111111111111111</p>
+        <div class="intro-header">
+               本项目为非营利性粉丝存档项目，所有的资料仅供交流与存档使用。
+        <div class="thanks-badge">
+            特别感谢 <strong>njzrecord团队</strong> 为本站提供慷慨且珍贵的数据支持 <br>Special thanks to <strong>njzrecord team</strong> for their generous and invaluable data support to this project.
+        </div>
+    </div>
+
+    <div class="submission-section">
+        <div class="section-title">✍️投稿渠道</div>
+        <div class="email-card" id="copyEmail">
+            archive@inamomentweunite.com
+            <span class="copy-tip">已复制</span>
+        </div>
+        <ul class="rules-list">
+            <li><strong>邮件标题：</strong> 请遵循格式 <code>[类别(时间线/分析/勘误/建议)] + 内容名</code>。</li>
+            <li>若您希望在贡献者名单中留名，请在邮件中备注您的昵称。</li>
+            <li>建议将文本整理为 Markdown，多媒体文件请打包发送，大文件建议附带网盘链接。</li>
+            <li> 投稿即视为授权本站以非商业目的进行二次整理与展示。</li>
+            <li>投稿内容应与newjeans/bunnies相关，且符合非商业使用准则。</li>
+        </ul>
+    </div>
+
+    <div class="submission-section">
+        <div class="section-title">🌐相关站点</div>
+    <div class="site-list">
         
-        <section class="info-section">
-            <h3>关于本站</h3>
-            <p></p>
-        </section>
+        <a href="https://photos.inamomentweunite.com" class="site-card">
+            <div class="site-info">
+                <span class="site-name">照片墙</span>
+                <p class="site-desc">可以查看和分享newjeans/bunnies相关的图片与留言</p>
+            </div>
+            <span class="site-arrow">→</span>
+        </a>
+
+        <a href="https://njzrecord.com" class="site-card">
+            <div class="site-info">
+                <span class="site-name">njzrecord 数据库</span>
+                <p class="site-desc">韩语版时间线网站，本站核心数据来源，收录了最详尽的原始档案。</p>
+            </div>
+            <span class="site-arrow">→</span>
+        </a>
+                <a href="https://sites.google.com/view/the-bunny-association/home#/" class="site-card">
+            <div class="site-info">
+                <span class="site-name">the Bunny Association</span>
+                <p class="site-desc">一个专门从事辟谣与内容创作的国际粉丝团体网站。</p>
+            </div>
+            <span class="site-arrow">→</span>
+        </a>
+    </div>
+    </div>
+
+    <div class="submission-section">
+        <div class="section-title">💪贡献者名单</div>
+        <p style="font-size: 0.9rem; color: #b2bec3; margin-bottom: 1rem;">感谢为本项目付出时间与精力的每一位贡献者：</p>
+        <div class="contributor-list">
+            <span class="contributor-tag">somebnz</span>
+            <span class="contributor-tag">|y|_bnz</span>
+            <span class="contributor-tag">Bunnies_Luminosity</span>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 </body>
+<script>
+const el = document.getElementById("copyEmail");
+
+el.addEventListener("click", async () => {
+    const text = el.childNodes[0].nodeValue.trim();
+
+    try {
+        await navigator.clipboard.writeText(text);
+
+        el.classList.add("copied");
+
+        setTimeout(() => {
+            el.classList.remove("copied");
+        }, 1500);
+
+    } catch (err) {
+        console.error("复制失败:", err);
+    }
+});
+</script>
 </html>
