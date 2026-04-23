@@ -2,7 +2,8 @@
 title: "titletitletitletitletitle"
 date: 2024-05-20
 summary: "qwertyuiop"
-categories: ["blue"]  
+categories: ["blue"] 
+draft: true 
 ---
 
 testtesttesttesttesttesttesttesttesttesttesttesttesttest

@@ -4,7 +4,7 @@ date: 2026-02-19
 categories: ["blue"]          # 紫色代表国会/公权力
 tags: ["1", "1"]
 summary: "qwertttttest"
-draft: false
+draft: true
 evidences:
   - type: "新闻报道"
     url: "https://news.tvchosun.com/site/data/html_dir/2024/05/18/2024051890073.html"
