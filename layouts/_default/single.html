@@ -77,6 +77,8 @@
 <div class="post-navigation">
     {{ if eq .Section "analysis" }}
         <a href="/analysis/" class="btn-analysis">🔍 返回专栏列表</a>
+    {{ else if eq .Section "sources" }}
+        <a href="/sources/" class="btn-sources">📑 返回资料库</a>
     {{ else }}
         <a href="/" class="btn-timeline">🕒 返回时间轴</a>
     {{ end }}
