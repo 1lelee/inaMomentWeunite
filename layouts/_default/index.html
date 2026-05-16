@@ -26,14 +26,18 @@
                 <button class="search-btn active" id="all-btn">全部的</button>
                 <button class="search-btn" id="year-btn">年份</button>
             </div>
+            <!-- 年份筛选选项 提取content/posts/njzrecord的子目录 -->
             <div class="year-options" id="year-options" style="display: none;">
                 <button class="year-btn" data-year="all">全部的</button>
-                <button class="year-btn" data-year="2026">2026</button>
-                <button class="year-btn" data-year="2025">2025</button>
-                <button class="year-btn" data-year="2024">2024</button>
-                <button class="year-btn" data-year="2023">2023</button>
-                <button class="year-btn" data-year="2022">2022</button>
-                <button class="year-btn" data-year="2021">2021</button>
+                {{ $years := slice }}
+                {{ range (readDir "content/posts/njzrecord") }}
+                    {{ if .IsDir }}
+                        {{ $years = $years | append .Name }}
+                    {{ end }}
+                {{ end }}
+                {{ range sort $years "value" "desc" }}
+                <button class="year-btn" data-year="{{ . }}">{{ . }}</button>
+                {{ end }}
             </div>
             <div class="search-sort-container">
                 <div class="search-box">
