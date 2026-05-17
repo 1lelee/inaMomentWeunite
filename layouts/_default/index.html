@@ -89,7 +89,7 @@
                 <span class="date">{{ .Date.Format "2006-01-02" }}</span>
             </div>
             <div class="timeline-content">
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <h2><a href="{{ .RelPermalink }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a></h2>
                 <p class="summary">{{ .Params.summary | default .Summary }}</p>
             </div>
         </div>
