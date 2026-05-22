@@ -32,10 +32,13 @@
 
 #### 4. 投稿方式
 
-* [ ] 网站勘误，反馈，bug，建议等，拟采用问卷形式
-* [ ] 长文或其他投稿，拟采用邮件私信形式
+* [x] 网站勘误，反馈，bug，建议等，拟采用问卷形式
+* [x] 长文或其他投稿，拟采用邮件私信形式
 
 *（问卷可采用自定义表单界面 + cloudflare function + 飞书表格）*
+> [![Related Project](https://img.shields.io/badge/Related%20Project-留言版+问卷仓库-blue?style=flat-smart&logo=github)](https://github.com/GitEpuppy/bnzSpaceBoard.git)
+> - [留言采集表格](https://dcnglfuw9yvl.feishu.cn/base/Q54nb3De8ad52psdGbrc8ZTgnRc)
+> - [反馈建议采集表格](https://dcnglfuw9yvl.feishu.cn/base/MQEDbyDIGaUHzns35sYcwb6gnXg?from=from_copylink)
 
 #### 5. 界面优化
 
