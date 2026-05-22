@@ -2,3 +2,35 @@
 <div style="position: relative; padding-left: 30px; border-left: 2px solid #ddd; margin-left: 10px;">
     {{ .Inner | markdownify }}
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. 自动寻找 Hugo 侧边栏大纲的容器（常见为 #TableOfContents 或 .toc）
+    var tocContainer = document.querySelector("#TableOfContents ul") || document.querySelector(".toc ul");
+    
+    if (tocContainer) {
+        // 2. 抓取页面中所有符合你指定格式的 h3 标题
+        var eventHeaders = document.querySelectorAll("h3[id^='section-']");
+        
+        eventHeaders.forEach(function(header) {
+            // 防止重复添加
+            if (document.querySelector(`.toc-dynamic-${header.id}`)) return;
+
+            // 3. 创建一个新的导航栏列表项 <li>
+            var li = document.createElement("li");
+            li.className = `toc-dynamic-${header.id}`;
+            
+            // 4. 创建跳转链接 <a>
+            var a = document.createElement("a");
+            a.href = "#" + header.id;
+            
+            // 过滤掉颜文字或直接使用纯文本
+            a.textContent = header.textContent; 
+            
+            // 5. 组装并塞进大纲容器
+            li.appendChild(a);
+            tocContainer.appendChild(li);
+        });
+    }
+});
+</script>
