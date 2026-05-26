@@ -43,7 +43,7 @@
     <div class="analysis-list">
         {{ range where .Site.RegularPages "Section" "analysis" }}
         <div class="analysis-item">
-            <a href="{{ .RelPermalink }}" class="analysis-link">
+            <a href="{{ .RelPermalink }}" target="_blank" rel="noopener noreferrer" class="analysis-link">
                 <div class="analysis-info">
                     <h3>{{ .Title }}</h3>
                     <p>{{ .Params.summary | default .Summary | truncate 80 }}</p>
