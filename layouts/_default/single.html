@@ -81,7 +81,7 @@
     <ul class="related-list">
         {{ range .Params.related_posts }}
         <li>
-            <a href="{{ .link }}">{{ .title }}</a>
+            <a href="{{ .link }}"  target="_blank" rel="noopener">{{ .title }}</a>
         </li>
         {{ end }}
     </ul>
